@@ -1,11 +1,14 @@
-<mat-sidenav-container class="sidenav-container" (click)="drawer.toggle()">
+<mat-sidenav-container class="sidenav-container" >
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="!(isHandset$ | async)">
-    <mat-toolbar>Logo</mat-toolbar>
+      [opened]="!(isHandset$ | async)" fullscreen>
+    <mat-toolbar>
+      Menu 
+
+    </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="/dashboard">Dashboard</a>
+      <a mat-list-item href="/dashboard"><button mat-icon-button><mat-icon>apps</mat-icon></button> Dashboard</a>
       <a mat-list-item href="/form">Form Exemplo</a>
       <a mat-list-item href="/datatable">Data Table</a>
     </mat-nav-list>
@@ -20,7 +23,15 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Sistema de Gestão de Benefícios</span>
+      <span>
+          <span align="right">
+              <button mat-icon-button td-menu-button tdLayoutToggle (click)="drawer.toggle()">
+                <mat-icon>menu</mat-icon>
+              </button>
+            </span>
+        Sistema de Gestão de Benefícios 
+      </span>
+      <span flex><div layout-align="start center">asdfasdfas</div></span>
     </mat-toolbar>
     <!-- Add Content Here -->
   </mat-sidenav-content>

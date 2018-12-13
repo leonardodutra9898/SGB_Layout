@@ -16,6 +16,8 @@ import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DatatableComponent } from './datatable/datatable.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

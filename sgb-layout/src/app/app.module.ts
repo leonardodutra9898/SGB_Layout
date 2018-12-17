@@ -7,7 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatCommonModule, MatGridTile, MatGridListModule, MatIconModule, MatListModule, MatInputModule, MatSelectModule, MatRadioModule, MatCardModule, MatTableModule, MatPaginatorModule, MatSortModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatCommonModule, MatGridTile, MatGridListModule, 
+  MatIconModule, MatListModule, MatInputModule, MatSelectModule, MatRadioModule, 
+  MatCardModule, MatTableModule, MatPaginatorModule, MatSortModule} from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -15,8 +17,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DatatableComponent } from './datatable/datatable.component';
+import { HomeComponent } from './home/home.component';
 
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { DatatableComponent } from './datatable/datatable.component';
     DashboardComponent,
     ToolbarComponent,
     FormComponent,
-    DatatableComponent
+    DatatableComponent,
+    HomeComponent
   ],
   exports: [
     MatToolbarModule,
@@ -51,7 +55,8 @@ import { DatatableComponent } from './datatable/datatable.component';
     ReactiveFormsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    FormsModule
     
   ],
   providers: [],

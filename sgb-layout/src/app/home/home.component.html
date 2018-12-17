@@ -1,0 +1,101 @@
+  <div class="contentCustom">
+    <mat-grid-list cols="3" flex>
+        <mat-grid-tile class="gridCustom" flex>
+            <mat-card class="cardCustom" role="group">
+                <mat-card-title>Processos Novos</mat-card-title>
+                <mat-card-subtitle>Inscrições</mat-card-subtitle>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+                    <table mat-table [dataSource]="dataSource2" class="tableCustom">
+                        
+                          <!-- Name Column -->
+                          <ng-container matColumnDef="name">
+                            <th mat-header-cell *matHeaderCellDef> Processo </th>
+                            <td mat-cell *matCellDef="let element2"> {{element2.name}} </td>
+                          </ng-container>
+                        
+                          <!-- Weight Column -->
+                          <ng-container matColumnDef="situacao">
+                            <th mat-header-cell *matHeaderCellDef> Situação </th>
+                            <td mat-cell *matCellDef="let element2"> {{element2.situacao}} </td>
+                          </ng-container>
+
+                          <!-- Weight Column -->
+                          <ng-container matColumnDef="etapa">
+                            <th mat-header-cell *matHeaderCellDef> Etapa </th>
+                            <td mat-cell *matCellDef="let element2"> {{element2.etapa}} </td>
+                          </ng-container>
+                    
+                          <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                          <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+                        </table>
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions>
+                  <a mat-button color="primary" class="text-upper">
+                    Ver Mais
+                  </a>
+                </mat-card-actions>
+              </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile flex>
+            <mat-card tdMediaToggle="gt-sm" class="cardCustom" role="group">
+                <mat-card-title>Publicações</mat-card-title>
+                <mat-card-subtitle>Editais, Portarias, Aditivos</mat-card-subtitle>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+
+                    <table mat-table [dataSource]="dataSource" class="tableCustom">
+                        
+                          <!-- Name Column -->
+                          <ng-container matColumnDef="name">
+                            <th mat-header-cell *matHeaderCellDef> Descrição </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                          </ng-container>
+                        
+                          <!-- Weight Column -->
+                          <ng-container matColumnDef="edital">
+                            <th mat-header-cell *matHeaderCellDef> Edital</th>
+                            <td mat-cell *matCellDef="let element"> {{element.edital}} </td>
+                          </ng-container>
+                    
+                          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                        </table>                  
+
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions>
+                  <a mat-button color="primary" class="text-upper">
+                    <span>Ver Mais</span>
+                  </a>
+                </mat-card-actions>
+              </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile flex>
+            <mat-card class="cardLoginCustom">
+                <mat-card-title>Acompanhamento</mat-card-title>
+                <mat-card-subtitle>Acompanhar processos, resultados</mat-card-subtitle>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+                  <div class="formLoginCustom">
+                    <form name="formLogin">
+                        <mat-form-field class="formLoginFieldCustom">
+                          <input matInput placeholder="Usuário ou E-mail" value="">
+                        </mat-form-field>
+                        <mat-form-field class="formLoginFieldCustom">
+                            <input matInput placeholder="Senha" type="password">
+                          </mat-form-field>
+                      </form>
+                  </div>
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary">Acessar</button>
+                    <button mat-button color="warn">Esqueci a Senha</button>
+                    <button mat-button color="primary">Não tenho cadastro</button>
+                </mat-card-actions>
+              </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>

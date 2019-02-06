@@ -22,6 +22,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 
 import {FlexLayoutModule} from "@angular/flex-layout";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {FlexLayoutModule} from "@angular/flex-layout";
     ToolbarComponent,
     FormComponent,
     DatatableComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   exports: [
     MatToolbarModule,

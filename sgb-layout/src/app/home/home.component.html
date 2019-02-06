@@ -1,8 +1,78 @@
 <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" 
-      fxLayoutGap="10px" fxLayoutGap.xs="0">
+      fxLayoutGap="10px" fxLayoutGap.xs="15px">
 
-    <div class="item item-1" fxFlex="15%" style="background-color: cadetblue">A</div>
-    <div class="item item-2" fxFlex="20%" fxFlexOrder="3" style="background-color: chocolate">B</div>
-    <div class="item item-3" fxFlex="15%" fxFlex style="background-color: darkgreen">C</div>
+    <div class="item item-1" fxFlex="70%" style="background-color: cadetblue">
+      <mat-card role="group" class="mat-elevation-z8">
+        <mat-card-title>Todos os Processos</mat-card-title>
+        <mat-card-subtitle>Inscrições, editais, publicações e etc</mat-card-subtitle>
+        <mat-divider></mat-divider>
+        <mat-card-content >
+            <table mat-table [dataSource]="dadosProcessos" >
+                
+                  <ng-container matColumnDef="edital" >
+                    <th mat-header-cell *matHeaderCellDef> Edital </th>
+                    <td mat-cell *matCellDef="let processos"> {{processos.edital}} </td>
+                  </ng-container>
+
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Processo </th>
+                    <td mat-cell *matCellDef="let processos"> {{processos.name}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="descricao">
+                    <th mat-header-cell *matHeaderCellDef> Descrição </th>
+                    <td mat-cell *matCellDef="let processos"> {{processos.descricao}} </td>
+                  </ng-container>
+                
+                  <!-- Weight Column -->
+                  <ng-container matColumnDef="situacao">
+                    <th mat-header-cell *matHeaderCellDef> Situação </th>
+                    <td mat-cell *matCellDef="let processos"> {{processos.situacao}} </td>
+                  </ng-container>
+
+                  <!-- Weight Column -->
+                  <ng-container matColumnDef="etapa">
+                    <th mat-header-cell *matHeaderCellDef> Etapa </th>
+                    <td mat-cell *matCellDef="let processos"> {{processos.etapa}} </td>
+                  </ng-container>
+            
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+                </table>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions>
+          <a mat-button color="primary" class="text-upper">
+            Ver Mais
+          </a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="item item-2" fxFlex="30%" fxFlexOrder="2">
+      <mat-card class="cardLoginCustom">
+        <mat-card-title>Acompanhamento</mat-card-title>
+        <mat-card-subtitle>Acompanhar processos, resultados</mat-card-subtitle>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+          <div class="formLoginCustom">
+            <form name="formLogin">
+                <mat-form-field class="formLoginFieldCustom">
+                  <input matInput placeholder="Usuário ou E-mail" value="">
+                </mat-form-field>
+                <mat-form-field class="formLoginFieldCustom">
+                    <input matInput placeholder="Senha" type="password">
+                  </mat-form-field>
+              </form>
+          </div>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">Acessar</button>
+            <button mat-button color="warn">Esqueci a Senha</button>
+            <button mat-button color="primary">Cadastre-se</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
 
 </div>

@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { FooterComponent } from './footer/footer.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     FormComponent,
     DatatableComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SubscriptionComponent
   ],
   exports: [
     MatToolbarModule,

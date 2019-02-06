@@ -1,8 +1,8 @@
 <mat-sidenav-container class="sidenav-container" >
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async)" fullscreen>
+      [attr.role]="(!isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(!isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(!isHandset$ | async)" fullscreen>
     <mat-toolbar>
       Menu 
     </mat-toolbar>
@@ -19,11 +19,11 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        *ngIf="!isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>
-          <span align="right">
+          <span>
               <button mat-icon-button td-menu-button tdLayoutToggle (click)="drawer.toggle()">
                 <mat-icon>menu</mat-icon>
               </button>

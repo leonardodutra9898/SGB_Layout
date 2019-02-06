@@ -21,6 +21,8 @@ import { HomeComponent } from './home/home.component';
 
 import { FormsModule } from '@angular/forms';
 
+import {FlexLayoutModule} from "@angular/flex-layout";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,8 +58,8 @@ import { FormsModule } from '@angular/forms';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    FormsModule
-    
+    FormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

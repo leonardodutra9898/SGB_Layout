@@ -1,13 +1,15 @@
 .footer {
-    position: fixed;
+    //position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #023e70;
     color: white;
     text-align: center;
-    padding: 10px;
-    height: 8%;
+    padding: 5px;
+    height: 10%;
+    margin-top: 50px;
+    display: block;
   }
 
 .logoCustom {

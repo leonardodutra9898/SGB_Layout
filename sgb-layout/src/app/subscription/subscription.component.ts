@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+declare var $:any;
 
 export interface Step {
   step : string;
@@ -21,13 +23,18 @@ const STEPS : Step[]  = [
   templateUrl: './subscription.component.html',
   styleUrls: ['./subscription.component.scss']
 })
-export class SubscriptionComponent implements OnInit {
+export class SubscriptionComponent {
+  
+  title : string = "Leo";
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {  
+}
+
+  public toggleTitle(){
+    console.log("Novo teste");
+    $('.title').slideToggle();
   }
 
 }
-
-

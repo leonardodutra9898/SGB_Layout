@@ -32,7 +32,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./semantic/out/semantic.min.js"
+              "./node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {

@@ -1,0 +1,139 @@
+<div class="ui container subcriptionCustom">
+    <div class="ui grid">
+        <div class="sixteen wide column">
+            <h1>Etapa: Inscrição</h1>
+        </div>
+
+        <!--VIEW GENERAL SCREENS-->
+        <div class="four wide column">
+                <div class="ui vertical steps">
+                        <div class="completed step">
+                          <i class="bullhorn icon"></i>
+                          <div class="content">
+                            <div class="title">Publicação</div>
+                            <div class="description">Resultados, recursos, informativos!</div>
+                          </div>
+                        </div>
+                        <div class="active step">
+                          <i class="pencil alternate icon"></i>
+                          <div class="content">
+                            <div class="title">Inscrição</div>
+                            <div class="description">Formulário de Inscrição para Benefícios</div>
+                          </div>
+                        </div>
+                        <div class="step">
+                          <i class="handshake outline icon"></i>
+                          <div class="content">
+                            <div class="title">Entrevista</div>
+                            <div class="description">Entrevista com a comissão</div>
+                          </div>
+                        </div>
+                        <div class="step">
+                            <i class="handshake outline icon"></i>
+                            <div class="content">
+                              <div class="title">Recursos</div>
+                              <div class="description">Interpor recurso junto a comissão</div>
+                            </div>
+                          </div>
+                      </div>
+        </div>
+        
+        
+        <div class="twelve wide column">
+                <div class="ui ordered steps">
+                        <div class="active step">
+                          <div class="content">
+                            <div class="title">Dados Pessoais</div>
+                            <div class="description">Informar dados pessoais</div>
+                          </div>
+                        </div>
+                        <div class="step">
+                          <div class="content">
+                            <div class="title">Contatos e Endereço</div>
+                            <div class="description">Informação de contatos e endereço</div>
+                          </div>
+                        </div>
+                        <div class="step">
+                          <div class="content">
+                            <div class="title">Documentação</div>
+                            <div class="description">Documentação necessária</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="ui success message" >
+                          <div class="header">Mensagem</div>
+                          <p class="title">{{title}}</p>
+                        </div>
+
+                      <!--FORMULÁRIOS-->
+                    <div class="ui piled segment">
+                      <h4 class="ui header">Formulário de Inscrição</h4>
+                    
+                      <div class="ui divider"></div>
+
+                      <div class="column" id="stepDadosPessoais">
+                        <form class="ui form" name="formInscricao">
+                          <div class="field">
+                            <label>Nome Completo</label>
+                            <input type="text" name="nomeCompleto" placeholder="Nome Completo">
+                          </div>
+
+                          <div class="two fields">
+                            <div class="field">
+                              <label>Estado</label>
+                              <select class="ui fluid dropdown" name="uf">
+                                <option value="">Estado</option>
+                                <option value="CE">Ceará</option>
+                                <option value="PA">Pará</option>
+                              </select>
+                            </div>
+                            <div class="field">
+                              <label>País</label>
+                              <div class="ui fluid search selection dropdown">
+                                <input type="hidden" name="pais">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Selecione País</div>
+                                <div class="menu">
+                                  <div class="item" data-value="af"><i class="af flag"></i>Afeganistão</div>
+                                  <div class="item" data-value="ax"><i class="ax flag"></i>Ilhas X</div>
+                                  <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                                  <div class="item" data-value="br"><i class="br flag"></i>Brasil</div>
+                                </div>
+                               </div>
+                            </div>
+                            </div>
+
+                            <div class="field error">
+                              <label>Sexo</label>
+                              <div class="ui selection dropdown">
+                                <div class="default text">Selecione</div>
+                                <i class="dropdown icon"></i>
+                                <input type="hidden" name="genero">
+                                <div class="menu">
+                                  <div class="item" data-value="masculino">Masculino</div>
+                                  <div class="item" data-value="feminino">Feminino</div>
+                                </div>
+                              </div>
+                            </div>
+
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" tabindex="0" class="hidden" name="termoInscricao">
+                              <label>Declaro que meus dados estão todos corretos!</label>
+                            </div>
+                          </div>
+                          <button class="ui button green" type="submit">Próximo</button>
+
+                          <div class="ui divider"></div>
+
+                          <div class="ui error message"></div>
+                        </form>
+                      </div>
+                  </div>
+        </div>
+        <!--VIEW GENERAL SCREENS-->
+
+    </div>
+</div>
+

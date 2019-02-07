@@ -73,7 +73,7 @@
                       <div class="ui divider"></div>
 
                       <div class="column" id="stepDadosPessoais">
-                        <form class="ui form">
+                        <form class="ui form" name="formInscricao">
                           <div class="field">
                             <label>Nome Completo</label>
                             <input type="text" name="nomeCompleto" placeholder="Nome Completo">
@@ -119,7 +119,7 @@
 
                           <div class="field">
                             <div class="ui checkbox">
-                              <input type="checkbox" tabindex="0" class="hidden">
+                              <input type="checkbox" tabindex="0" class="hidden" name="termoInscricao">
                               <label>Declaro que meus dados estão todos corretos!</label>
                             </div>
                           </div>
@@ -133,17 +133,3 @@
     </div>
 </div>
 
-<script>
-  $('.infinite.example .piled.segment')
-    .visibility({
-      once: false,
-      // update size when new content loads
-      observeChanges: true,
-      // load content on bottom edge visible
-      onBottomVisible: function() {
-        // loads a max of 5 times
-        window.loadFakeContent();
-      }
-    })
-  ;
-</script>

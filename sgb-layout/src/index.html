@@ -12,5 +12,53 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <script>
+    $(function() {
+    $('.ui.form')
+      .form({
+        on: 'blur',
+        fields: {
+          nomeCompleto: {
+            identifier  : 'nomeCompleto',
+            rules: [
+              {
+                type   : 'empty',
+                prompt : 'Nome Completo não pode ficar nulo'
+              }
+            ]
+          },
+          termoInscricao: {
+            identifier  : 'termoInscricao',
+            rules: [
+              {
+                type   : 'checked',
+                prompt : 'Para continuar a inscrição é necessário declarar ciência dos dados prestados.'
+              }
+            ]
+          },
+          uf: {
+            identifier  : 'uf',
+            rules: [
+              {
+                type   : 'empty',
+                prompt : 'Estado da federação ausente'
+              }
+            ]
+          },
+          pais: {
+            identifier  : 'pais',
+            rules: [
+              {
+                type   : 'empty',
+                prompt : 'País sem seleção'
+              }
+            ]
+          }
+        }
+      });
+    })
+  </script>
+
 </body>
 </html>

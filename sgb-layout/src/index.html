@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
+
 </head>
 <body>
   <app-root></app-root>
@@ -59,6 +60,45 @@
         }
       });
     })
+
+//    $(function(){
+
+  $(document)
+    .ready(function() {
+      $('.ui.menu .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+      $('.ui.vertical.pointing.menu a.item')
+        .on('click', function() {
+          $(this)
+            .addClass('active')
+            .siblings()
+            .removeClass('active')
+          ;
+        })
+      ;
+    })
+  ;
+//    })
+
+  </script>
+
+<script>
+//    $(document).ready(function() {
+//      $('.ui.vertical.pointing.menu').menu();
+//    });
+  </script>
+
+<script>
+//    $('.ui.vertical.pointing.menu')
+//        .on('click', 'item', function() {
+//          if(!$(this).hasClass('dropdown')) {
+//            $(this)
+//              .addClass('active')
+//                .siblings('.item')
+//                  .removeClass('active');
+//          }
+//    });
   </script>
 
 </body>

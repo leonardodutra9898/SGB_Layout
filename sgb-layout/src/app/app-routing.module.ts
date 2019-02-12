@@ -5,6 +5,7 @@ import { FormComponent } from './form/form.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path: 'subscription',
     component: SubscriptionComponent
+  },
+  {
+    path: 'users',
+    component: UserComponent
   }
 ];
 

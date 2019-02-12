@@ -61,8 +61,6 @@
       });
     })
 
-//    $(function(){
-
   $(document)
     .ready(function() {
       $('.ui.menu .ui.dropdown').dropdown({
@@ -79,27 +77,17 @@
       ;
     })
   ;
-//    })
 
   </script>
 
 <script>
-//    $(document).ready(function() {
-//      $('.ui.vertical.pointing.menu').menu();
-//    });
-  </script>
-
-<script>
-//    $('.ui.vertical.pointing.menu')
-//        .on('click', 'item', function() {
-//          if(!$(this).hasClass('dropdown')) {
-//            $(this)
-//              .addClass('active')
-//                .siblings('.item')
-//                  .removeClass('active');
-//          }
-//    });
-  </script>
+  function confirmDelete(){
+   alert("fasfdsa");
+    $('.ui.basic.modal')
+      .modal('show')
+    ;
+  }
+</script>
 
 </body>
 </html>

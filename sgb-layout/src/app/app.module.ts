@@ -24,6 +24,7 @@ import { FormsModule } from '@angular/forms';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { FooterComponent } from './footer/footer.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SubscriptionComponent } from './subscription/subscription.component';
     DatatableComponent,
     HomeComponent,
     FooterComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
+    UserComponent
   ],
   exports: [
     MatToolbarModule,

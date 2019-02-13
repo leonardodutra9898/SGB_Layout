@@ -25,6 +25,9 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import { FooterComponent } from './footer/footer.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { UserComponent } from './user/user.component';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { UserAddComponent } from './user/user-add/user-add.component';
+import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { UserComponent } from './user/user.component';
     HomeComponent,
     FooterComponent,
     SubscriptionComponent,
-    UserComponent
+    UserComponent,
+    UserDetailComponent,
+    UserAddComponent,
+    UserEditComponent
   ],
   exports: [
     MatToolbarModule,

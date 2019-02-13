@@ -1,5 +1,6 @@
 <div class="ui container crudCustom">
-      <h1 class="ui header">
+
+  <h1 class="ui header">
         Usuários
       </h1>
       <div class="ui divider"></div>
@@ -18,9 +19,11 @@
             </div>
 
             <div class="right floated right aligned four wide column">
+              <a routerLink="/users/add">
                 <div class="ui right floated small primary labeled icon button pagination menu">
                     <i class="user icon"></i> Novo
-                  </div>
+                </div>
+              </a>
             </div>
 
         </div>
@@ -50,7 +53,7 @@
                     <td>No</td>
                     <td class="collapsing">
                         <div class="ui icon buttons">
-                            <button class="ui button">
+                            <button routerLink="/users/1/edit" class="ui button">
                               <i class="edit icon"></i>
                             </button>
                             <button class="ui button delete">
@@ -71,7 +74,7 @@
                     <td>Yes</td>
                     <td class="collapsing">
                         <div class="ui icon buttons">
-                            <button class="ui button">
+                            <button class="ui button" routerLink="/users/2/edit">
                               <i class="edit icon"></i>
                             </button>
                             <button class="ui button delete">
@@ -92,7 +95,7 @@
                       <td>Yes</td>
                       <td class="collapsing">
                           <div class="ui icon buttons">
-                              <button class="ui button">
+                              <button class="ui button" routerLink="/users/3/edit">
                                 <i class="edit icon"></i>
                               </button>
                               <button class="ui button delete">
@@ -114,7 +117,7 @@
                     <td>Yes -- </td>
                     <td class="collapsing">
                         <div class="ui icon buttons">
-                            <button class="ui button">
+                            <button class="ui button" routerLink="/users/4/edit">
                               <i class="edit icon"></i>
                             </button>
                             <button class="ui button delete">

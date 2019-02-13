@@ -59,10 +59,7 @@
           }
         }
       });
-    })
 
-  $(document)
-    .ready(function() {
       $('.ui.menu .ui.dropdown').dropdown({
         on: 'hover'
       });
@@ -71,23 +68,15 @@
           $(this)
             .addClass('active')
             .siblings()
-            .removeClass('active')
-          ;
-        })
-      ;
+            .removeClass('active');
+        });
+
+        $('.ui.button.delete').click(function(){
+          $('.ui.modal').modal('show');
+        });
+
     })
-  ;
 
   </script>
-
-<script>
-  function confirmDelete(){
-   alert("fasfdsa");
-    $('.ui.basic.modal')
-      .modal('show')
-    ;
-  }
-</script>
-
 </body>
 </html>

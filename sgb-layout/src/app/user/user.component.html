@@ -53,7 +53,7 @@
                             <button class="ui button">
                               <i class="edit icon"></i>
                             </button>
-                            <button class="ui button">
+                            <button class="ui button delete">
                               <i class="trash icon"></i>
                             </button>
                         </div>
@@ -74,7 +74,7 @@
                             <button class="ui button">
                               <i class="edit icon"></i>
                             </button>
-                            <button class="ui button">
+                            <button class="ui button delete">
                               <i class="trash icon"></i>
                             </button>
                         </div>
@@ -95,7 +95,7 @@
                               <button class="ui button">
                                 <i class="edit icon"></i>
                               </button>
-                              <button class="ui button">
+                              <button class="ui button delete">
                                 <i class="trash icon"></i>
                               </button>
                           </div>
@@ -111,13 +111,13 @@
                     <td>Jill Lewis</td>
                     <td>May 11, 2014</td>
                     <td>jilsewris22@yahoo.com</td>
-                    <td>Yes</td>
+                    <td>Yes -- </td>
                     <td class="collapsing">
                         <div class="ui icon buttons">
                             <button class="ui button">
                               <i class="edit icon"></i>
                             </button>
-                            <button class="ui button" (click)="confirmDelete()">
+                            <button class="ui button delete">
                               <i class="trash icon"></i>
                             </button>
                         </div>
@@ -142,16 +142,19 @@
 
 </div>
 
-
-
-<div class="ui basic modal">
-    <div class="header">Confirmação de Exclusão</div>
+<div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">
+      Confirmação de Exclusão
+    </div>
     <div class="content">
-      <div class="content">
-        <p></p>
-        <p></p>
-        <p></p>
+      <div class="description">
+        Uma exclusão acidental pode ser desagradável. Por favor tome essa ação com cuidado.
       </div>
+    </div>
+    <div class="actions">
+      <div class="ui button default">Não</div>
+      <div class="ui small button red">Confirmar Exclusão</div>
     </div>
   </div>
 

@@ -2,8 +2,7 @@ import {Routes, RouterModule} from '@angular/router';
 import { UserComponent } from './user.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { UserEditComponent } from './user-edit/user-edit.component';
-import { UserAddComponent } from './user-add/user-add.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 const userRoutes : Routes = [
     {
@@ -12,7 +11,7 @@ const userRoutes : Routes = [
     },
     {
         path: 'users/add',
-        component: UserAddComponent
+        component: UserFormComponent
     },
     {
         path: 'users/:id',
@@ -20,7 +19,7 @@ const userRoutes : Routes = [
     },
     {
         path: 'users/:id/edit',
-        component: UserEditComponent
+        component: UserFormComponent
     }
 ];
 

@@ -5,10 +5,6 @@ import { FormComponent } from './form/form.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { HomeComponent } from './home/home.component';
-import { UserComponent } from './user/user.component';
-import { UserDetailComponent } from './user/user-detail/user-detail.component';
-import { UserAddComponent } from './user/user-add/user-add.component';
-import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 
 const routes: Routes = [
@@ -34,22 +30,6 @@ const routes: Routes = [
   {
     path: 'subscription',
     component: SubscriptionComponent
-  },
-  {
-    path: 'users',
-    component: UserComponent
-  },
-  {
-    path: 'users/add',
-    component: UserAddComponent
-  },
-  {
-    path: 'users/:id',
-    component: UserDetailComponent
-  },
-  {
-    path: 'users/:id/edit',
-    component: UserEditComponent
   }
 ];
 

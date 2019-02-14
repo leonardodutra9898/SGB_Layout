@@ -7,13 +7,14 @@ import { UserService } from "./user-service";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { UserRoutingModule } from "./user-routing.module";
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
         HttpClientModule,
-
+        UserRoutingModule
     ],
     exports: [],
     declarations: [

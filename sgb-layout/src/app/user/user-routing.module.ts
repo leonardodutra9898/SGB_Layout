@@ -1,11 +1,11 @@
 import {Routes, RouterModule} from '@angular/router';
 import { UserComponent } from './user.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
-import { ModuleWithProviders } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { UserEditComponent } from './user-edit/user-edit.component';
 import { UserAddComponent } from './user-add/user-add.component';
 
-const USER_ROUTES : Routes = [
+const userRoutes : Routes = [
     {
         path: 'users',
         component: UserComponent
@@ -24,4 +24,10 @@ const USER_ROUTES : Routes = [
     },
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forChild(USER_ROUTES);
+@NgModule({
+    imports: [RouterModule.forChild(userRoutes)],
+    exports: [RouterModule]
+})
+export class UserRoutingModule {
+
+}

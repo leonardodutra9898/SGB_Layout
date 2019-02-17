@@ -1,3 +1,69 @@
-<p>
-  user-form works!
-</p>
+<div class="ui container containerCustom">
+  <div class="ui header">
+    Adicionando/Atualizando Usuário
+  </div>
+
+  <div class="ui divider"></div>
+
+  <form class="ui form">
+    <div class="ui grid">  
+      <div class="eight wide column" >
+      <div class="field">
+          <div class="field">
+              <label for="nomeCompleto">
+                Nome Completo
+              </label>
+              <input type="text" required="required" name="nomeCompleto">
+          </div>
+
+          <div class="field">
+              <label for="logradouro">
+                Logradouro
+              </label>
+              <input type="text" required="required" name="logradouro">
+          </div>
+
+          <div class="field">
+            <label for="username">
+              Nome de Usuário
+            </label>
+            <input type="text" required="required" name="username">
+          </div>
+          <input type="submit" class="ui button blue" value="Cadastrar">
+      </div>
+      
+      </div>
+
+
+      <div class="eight wide column" >
+      <div class="field">
+          <div class="field">
+              <label for="nomeCompleto2">
+                E-Mail
+              </label>
+              <input type="text" required="required" name="email">
+          </div>
+
+          <div class="field">
+              <label for="tipoUsuario">
+                Tipo de Usuário
+              </label>
+              <select name="tipoUsuario">
+                <option value="presidente_membro">Presidente da Comissão</option>
+                <option value="tae_membro">Membro da Comissão TAE</option>
+                <option value="docente_membro">Membro da Comissão Docente</option>
+              </select>
+          </div>
+
+          <div class="field">
+            <label for="senha">
+              Senha
+            </label>
+            <input type="password" required="required" name="senha">
+          </div>
+      </div>
+      </div>
+  </div>
+</form>
+
+</div>

@@ -5,6 +5,7 @@ import { FormComponent } from './form/form.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path: 'subscription',
     component: SubscriptionComponent
+  },
+  {
+    path: 'not-found',
+    component: NotFoundComponent
   }
 ];
 

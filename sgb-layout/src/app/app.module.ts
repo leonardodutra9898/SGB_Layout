@@ -24,6 +24,7 @@ import { FormsModule } from '@angular/forms';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { FooterComponent } from './footer/footer.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { SubscriptionComponent } from './subscription/subscription.component';
     MatIconModule
   ],
   imports: [
+    UserModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
